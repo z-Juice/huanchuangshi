@@ -1,0 +1,372 @@
+input::-webkit-input-placeholder {
+  font-family: "微软雅黑";
+}
+
+input::-moz-placeholder {
+  font-family: "微软雅黑";
+}
+
+input::-moz-placeholder {
+  font-family: "微软雅黑";
+}
+
+input::-ms-input-placeholder {
+  font-family: "微软雅黑";
+}
+
+button {
+  border: 0;
+}
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.iconfont {
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
+.iconfont:before {
+  vertical-align: bottom;
+}
+
+.container {
+  width: 80%;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* 公共头部 */
+.public-header {
+  height: 96px;
+  background-color: #fff;
+}
+
+.public-header .navbar-brand img {
+  width: 220px;
+}
+
+.public-header .navbar {
+  padding: 0;
+}
+
+.public-header .nav-item {
+  display: flex;
+  align-items: center;
+  height: 96px;
+}
+
+.public-header .nav-item .nav-link {
+  display: block;
+  color: #3e3a39;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.public-header .nav-item .nav-link:hover {
+  color: #ed681a;
+}
+
+.public-header .dropdown div {
+  position: absolute;
+  top: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 175px;
+  background-color: rgba(255, 255, 255, .9);
+  display: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.public-header .dropdown:hover div {
+  display: block;
+}
+
+.public-header .dropdown div a {
+  line-height: 54px;
+  cursor: pointer;
+}
+
+.public-header .dropdown div a:hover {
+  background-color: #ed681a;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .public-header {
+    height: 48px;
+  }
+
+  .public-header .navbar-brand img {
+    width: 220px;
+  }
+
+  .public-header .nav-item a {
+    font-size: 12px;
+  }
+}
+
+/* 首页 */
+.home-main {
+  border-top: 96px solid transparent;
+}
+
+@media (max-width: 992px) {
+  .home-main {
+    border-top: 48px solid transparent;
+  }
+}
+
+/* 首页banner */
+.home-banner {
+  background-color: #f8f8f8;
+}
+
+.home-banner .carousel-inner .carousel-item img {}
+
+.home-banner .carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.home-banner .carousel-indicators .active {
+  width: 42px;
+}
+
+.home-banner .carousel-control-next-icon,
+.home-banner .carousel-control-prev-icon {
+  width: 42px;
+  height: 88px;
+}
+
+.home-banner .carousel-control-prev-icon {
+  background-image: url(../images/banner/banner_left.png)
+}
+
+.home-banner .carousel-control-next-icon {
+  background-image: url(../images/banner/banner_right.png);
+  opacity: .5;
+}
+
+@media (max-width: 992px) {
+
+  .home-banner .carousel-control-next-icon,
+  .home-banner .carousel-control-prev-icon {
+    width: 24px;
+    height: 50px;
+  }
+}
+
+/* 首页模块标题 */
+.home-title {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.home-title-l,
+.home-title-r {
+  flex: 1;
+  padding-top: 15px;
+}
+
+.home-title-l div {
+  border-top: 3px solid #b5b5b5;
+}
+
+.home-title-r div {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #b5b5b5;
+  border-left: none;
+}
+
+.home-title-c {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.home-title-c h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #f07e18;
+}
+
+.home-title-c p {
+  font-size: 18px;
+  color: #b5b5b5;
+}
+
+.home-title2 .home-title-r div {
+  border: none;
+  width: auto;
+  border-top: 3px solid #b5b5b5;
+}
+
+.home-title2 .home-title-l {
+  text-align: right;
+}
+
+.home-title2 .home-title-l div {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #b5b5b5;
+  border-right: none;
+}
+
+/* 首页关于我们 */
+.home-about {
+  padding: 80px 0 60px;
+  background-color: #f8f8f8;
+}
+
+.home-about-content {
+  display: flex;
+  position: relative;
+  height: 430px;
+}
+
+.home-about-content-img {
+  width: 37.5%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.home-about-content-text {
+  flex: 1;
+  padding: 5%;
+  background-color: #fff;
+}
+
+.home-about-content-text p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.home-about-content-more {
+  position: absolute;
+  bottom: -30px;
+  right: 50px;
+  width: 175px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #ffc436;
+}
+.home-about-content-more a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 6px 0 26px;
+  font-size: 18px;
+}
+.home-about-content-more img {
+  width: 38px;
+  height: 38px;
+}
+
+/* 首页四步 */
+.home-step {
+  background-color: #fff;
+}
+.home-step .container {
+  height: 34rem;
+  background: url('../images/home_stepbg.png') no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.home-step ul {
+  display: flex;
+}
+.home-step ul li {
+  width: 25%;
+}
+.home-step ul li {
+  width: 25%;
+}
+.home-step ul li div {
+  padding-top: 20rem;
+  padding-left: 1rem;
+}
+.home-step ul li:nth-child(2) div {
+  padding-top: 6rem;
+}
+.home-step ul li:nth-child(3) div {
+  padding-top: 18rem;
+  padding-left: 3rem;
+}
+.home-step ul li:last-child div {
+  padding-top: 8rem;
+}
+.home-step ul li div h3 {
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 1.375rem;
+  color: #2f2725;
+}
+.home-step ul li div h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 26px;
+  height: 4px;
+  background-color: #595757;
+}
+.home-step ul li div h5 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  color: #595757;
+}
+.home-step ul li div p {
+  line-height: 2;
+  font-size: .875rem;
+  color: #9e9e9e;
+}
