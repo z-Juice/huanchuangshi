@@ -135,6 +135,10 @@ button {
     border: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 .clearfix:after {
     content: "";
     height: 0;
@@ -194,13 +198,16 @@ button {
 }
 
 .public-header .navbar-brand {
-    padding: 0;
+    height: 100%;
     margin-right: .1rem;
-    font-size: .125rem;
+    padding: 0;
+    font-size: 0;
 }
 
 .public-header .navbar-brand img {
-    width: 220px;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    height: 100%;
 }
 
 .public-header .navbar-toggler {
@@ -224,6 +231,7 @@ button {
     display: block;
     color: #3e3a39;
     font-size: .12rem;
+    padding: 0 .1rem;
     padding-right: .1rem;
     padding-left: .1rem;
 }
@@ -237,8 +245,9 @@ button {
     top: .6625rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, .9);
     display: none;
+    padding-bottom: .06rem;
+    background-color: rgba(255, 255, 255, .9);
     font-size: .1rem;
     text-align: center;
 }
@@ -268,12 +277,29 @@ button {
         height: .48rem;
     }
 
-    .public-header .navbar-brand img {
-        width: 1.2rem;
+    .public-header .navbar-brand {
+        margin-left: .15rem;
     }
 
-    .public-header .nav-item a {
-        font-size: .12rem;
+    .public-header .navbar-brand img {
+        padding-top: .06rem;
+        padding-bottom: .06rem;
+    }
+
+    .public-header .navbar-toggler {
+        margin-right: .15rem;
+    }
+
+    .public-header .nav-item {
+        height: .5rem;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+    }
+
+    .public-header .nav-link {
+        width: 100%;
+        text-align: center;
+        font-size: .14rem;
     }
 }
 
@@ -440,22 +466,22 @@ button {
 }
 
 .home-banner .carousel-indicators li {
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: .1rem;
+    height: .1rem;
+    border-radius: .05rem;
+    margin-left: .125rem;
+    margin-right: .125rem;
     cursor: pointer;
 }
 
 .home-banner .carousel-indicators .active {
-    width: 42px;
+    width: .2625rem;
 }
 
 .home-banner .carousel-control-next-icon,
 .home-banner .carousel-control-prev-icon {
-    width: 42px;
-    height: 88px;
+    width: .2625rem;
+    height: .55rem;
 }
 
 .home-banner .carousel-control-prev-icon {
@@ -464,25 +490,29 @@ button {
 
 .home-banner .carousel-control-next-icon {
     background-image: url(../images/banner/banner_right.png);
-    opacity: .5;
 }
 
 @media (max-width: 992px) {
-  .home-banner .carousel-indicators li {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-    .home-banner .carousel-control-next-icon,
-    .home-banner .carousel-control-prev-icon {
-        width: 24px;
-        height: 50px;
+    .home-banner .carousel-indicators li {
+        width: .08rem;
+        height: .08rem;
+        border-radius: .04rem;
+        margin-left: .06rem;
+        margin-right: .06rem;
     }
+    .home-banner .carousel-indicators .active {
+        width: .2rem;
+    }
+    .home-banner .carousel-control-prev,.home-banner .carousel-control-next {
+        display: none;
+    }
+    
 }
 
 /* 首页模块标题 */
 .home-title {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: .375rem;
 }
 
 .home-title-l,
@@ -562,47 +592,52 @@ button {
     background-color: #b5b5b5;
 }
 
+@media (max-width: 992px) {
+    .home-title {
+        margin-bottom: .3rem;
+    }
+}
+
 /* 首页关于我们 */
 .home-about {
-    padding: 80px 0 60px;
+    padding: .5rem 0 .375rem;
     background-color: #f8f8f8;
 }
 
 .home-about-content {
-    display: flex;
     position: relative;
-    height: 430px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .home-about-content-img {
-    width: 37.5%;
-    height: 430px;
-    object-fit: cover;
+    padding: 0;
 }
 
 .home-about-content-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .home-about-content-text {
-    flex: 1;
     padding: 5%;
     background-color: #fff;
 }
 
 .home-about-content-text p {
-    font-size: 16px;
+    font-size: .1rem;
     line-height: 2;
 }
 
 .home-about-content-more {
     position: absolute;
-    bottom: -30px;
-    right: 50px;
-    width: 175px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 25px;
+    bottom: -.2rem;
+    right: .32rem;
+    width: 1.1rem;
+    height: .32rem;
+    line-height: .32rem;
+    border-radius: .16rem;
     background-color: #ffc436;
 }
 
@@ -612,8 +647,8 @@ button {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 0 6px 0 26px;
-    font-size: 18px;
+    padding: 0 .0375rem 0 .1625rem;
+    font-size: .1125rem;
 }
 
 .home-about-content-more a:hover {
@@ -621,13 +656,21 @@ button {
 }
 
 .home-about-content-more img {
-    width: 38px;
-    height: 38px;
+    width: .2375rem;
+    height: .2375rem;
+}
+
+@media (max-width: 992px) {
+    .home-about {
+        padding-top: .4rem;
+    }
 }
 
 /* 首页四步 */
 .home-step {
     background-color: #fff;
+    margin-bottom: .2rem;
+    overflow: hidden;
 }
 
 .home-step .container {
@@ -679,13 +722,13 @@ button {
     position: absolute;
     bottom: -10px;
     left: 0;
-    width: 26px;
+    width: .1625rem;
     height: 4px;
     background-color: #595757;
 }
 
 .home-step ul li div h5 {
-    margin-bottom: 16px;
+    margin-bottom: .1rem;
     font-size: .125rem;
     color: #595757;
 }
@@ -696,9 +739,23 @@ button {
     color: #9e9e9e;
 }
 
+@media (max-width: 992px) {
+    .home-step ul li div h3 {
+        margin-bottom: .2rem;
+        font-size: .1rem;
+    }
+    .home-step ul li div h5 {
+        margin-bottom: .06rem;
+        font-size: .1rem;
+    }
+    .home-step ul li div p {
+        display: none;
+    }
+}
+
 /* 首页新产品 */
 .home-newproduct {
-    margin-bottom: 80px;
+    margin-bottom: .5rem;
 }
 
 .home-newproduct-main .nav-tabs {
@@ -710,10 +767,10 @@ button {
 .home-newproduct-main .nav-tabs li a {
     position: relative;
     display: block;
-    width: 178px;
-    height: 44px;
-    line-height: 44px;
-    border-radius: 22px;
+    width: 1.1rem;
+    height: .275rem;
+    line-height: .275rem;
+    border-radius: .1375rem;
     font-size: .15rem;
     text-align: center;
     color: #636363;
@@ -736,7 +793,7 @@ button {
 }
 
 .home-newproduct-main .tab-content {
-    padding: 70px 0 80px;
+    padding: .45rem 0 .5rem;
     background-color: #ffc436;
 }
 
@@ -773,11 +830,18 @@ button {
 .home-newproduct-main .tab-pane ul img {
     width: 100%;
 }
-
+@media (max-width: 992px) {
+    .home-newproduct {
+        margin-bottom: .3rem;
+    }
+    .home-newproduct-main .tab-content {
+        padding: .35rem 0 .4rem;
+    }
+}
 /* 首页产品中心 */
 .home-product {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: .5rem;
     overflow: hidden;
 }
 
@@ -798,7 +862,7 @@ button {
 .home-product-list li {
     display: flex;
     float: left;
-    margin-bottom: 35px;
+    margin-bottom: .225rem;
     font-size: 0;
 }
 
@@ -924,9 +988,30 @@ button {
     display: block;
 }
 
+@media (max-width: 992px) {
+    .home-product {
+        margin-bottom: .4rem;
+    }
+    .home-product-list {
+        padding-bottom: .2rem;
+    }
+    .home-product-list li:nth-child(1),.home-product-list li:nth-child(2),.home-product-list li:nth-child(3) {
+        height: 1.4rem;
+    }
+    .home-product-list .home-product-li h4 {
+        height: .32rem;
+        line-height: .32rem;
+        font-size: .1rem;
+        overflow: hidden;
+    }
+    .home-product-bggray {
+        top: .8rem;
+    }
+}
+
 /* 玩转视频 */
 .home-video {
-    margin-bottom: 160px;
+    margin-bottom: 1rem;
 }
 
 .home-video-main {
@@ -938,6 +1023,10 @@ button {
     box-shadow: 0 0 30px 0 #d0d0d0;
 }
 
+.home-video-play {
+    padding: 0;
+}
+
 .home-video-play video {
     width: 100%;
     background-color: #fff;
@@ -947,7 +1036,7 @@ button {
     position: relative;
     width: 2.36rem;
     height: 3.25rem;
-    margin-left: 20px;
+    margin-left: .2rem;
     padding: .34rem .175rem;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -983,10 +1072,19 @@ button {
     margin-left: .3rem;
     margin-top: .2rem;
 }
+@media (max-width: 992px) {
+    .home-video-main {
+        margin: 0;
+        padding: .16rem .2rem .2rem;
+    }
+    .home-video-info {
+        margin-left: 0;
+    }
+}
 
 /* 合作案例 */
 .home-case {
-    padding-bottom: 100px;
+    margin-bottom: 1rem;
 }
 
 .home-case-main {
@@ -997,8 +1095,7 @@ button {
 
 .home-case-box {
     position: relative;
-    width: 6.775rem;
-    height: 3.4375rem;
+    width: 68%;
 }
 
 .home-case-in {
@@ -1016,13 +1113,18 @@ button {
 }
 
 .home-case-info {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
-    width: 1.7375rem;
+    width: 26%;
     height: 100%;
-    padding-top: .875rem;
-    padding-left: .356rem;
+    padding-left: 5%;
     background-color: rgba(0, 0, 0, .6);
+}
+
+.home-case-info>div {
+    margin-top: -50%;
 }
 
 .home-case-in .home-case-info {
@@ -1050,7 +1152,7 @@ button {
     position: absolute;
     bottom: -.2rem;
     left: 4px;
-    width: 45px;
+    width: .28rem;
     height: 4px;
     background-color: #fff;
 }
@@ -1060,16 +1162,40 @@ button {
     top: 50%;
     left: 0;
     width: 86%;
-    margin-top: -2rem;
-    height: 4rem;
+    height: 64%;
+    transform: translateY(-50%);
     background-color: #f6f6f6;
     z-index: -1;
+}
+
+@media (max-width: 992px) {
+    .home-case {
+        margin-bottom: .5rem;
+    }
+    .home-case-info {
+        padding-left: 2%;
+    }
+    .home-case-info h3 {
+        margin-bottom: .06rem;
+        font-size: .12rem;
+    }
+    
+    .home-case-info p {
+        position: relative;
+        font-size: .08rem;
+    }
+
+    .home-case-info p::after {
+        left: 0;
+        bottom: -.1rem;
+        height: 3px;
+    }
 }
 
 /* 数据 */
 .home-data {
     position: relative;
-    margin-bottom: 110px;
+    margin-bottom: .625rem;
 }
 
 .home-data img {
@@ -1088,12 +1214,13 @@ button {
 }
 
 .home-data-main ul {
-    width: 80%;
     margin-right: auto;
     margin-left: auto;
 }
 
 .home-data-main li {
+    padding-right: 0;
+    padding-left: 0;
     text-align: center;
 }
 
@@ -1108,9 +1235,18 @@ button {
     font-size: .1125rem;
 }
 
+@media (max-width: 992px) {
+    .home-data {
+        margin-bottom: .3rem;
+    }
+    .home-data-main li h3 {
+        font-size: .26rem;
+    }
+}
+
 /* 合作品牌 */
 .home-coop {
-    margin-bottom: 2rem;
+    margin-bottom: .9rem;
 }
 
 .home-coop-main {
@@ -1129,6 +1265,12 @@ button {
 
 .home-coop-main ul li img {
     width: 100%;
+}
+
+@media (max-width: 992px) {
+    .home-coop {
+        margin-bottom: .3rem;
+    }
 }
 
 /* 产品中心 */
@@ -1246,9 +1388,10 @@ button {
 }
 
 @media (max-width: 992px) {
-  .products-list-main {
-    padding-bottom: .6rem;
-  }
+    .products-list-main {
+        padding-bottom: .6rem;
+    }
+
     .products-list-nav {
         padding-top: .45rem;
         margin-right: .1rem;

@@ -13,70 +13,55 @@
   <script src="../../static/libs/jquery-3.2.1.min.js"></script>
   <script src="../../static/libs/popper.min.js"></script>
   <script src="../../static/libs/bootstrap4/js/bootstrap.min.js"></script>
-  <script src="../../static/libs/jquery.kxbdmarquee.js"></script>
-  <script type="text/javascript">
-    window.onresize = function () {
-      resize()
-    }
-    function resize() {
-      var rem = 0;
-      var htmlDOM = document.documentElement;
-      var currentWidth = htmlDOM.clientWidth;
-      rem = currentWidth / 12;
-      htmlDOM.style.fontSize = rem + 'px';
-    }
-    resize();
-  </script>
+  <script src="../../static/js/common.js"></script>
 </head>
 
 <body>
   <!-- 头部 -->
   <header class="fixed-top public-header">
-    <div class="container">
-      <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="navbar-brand" href="/"><img src="../../static/images/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">关于环创狮</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">
-                新品发布
-              </a>
-              <div>
-                <a class="dropdown-item" href="#">新品发布</a>
-                <a class="dropdown-item" href="#">玩转视频</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">产品中心</a>
-              <div>
-                <a class="dropdown-item" href="#">庭院游乐设计</a>
-                <a class="dropdown-item" href="#">卡通造型游乐器材设计</a>
-                <a class="dropdown-item" href="#">微地形钻爬游乐器械设计</a>
-                <a class="dropdown-item" href="#">园艺装饰设计</a>
-                <a class="dropdown-item" href="#">常备游乐器材设计</a>
-                <a class="dropdown-item" href="#">集中采购类产品</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">落地安装</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">合作案例</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/"><img src="../../static/images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../home/index.html">首页 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">关于环创狮</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#">
+              新品发布
+            </a>
+            <div>
+              <a class="dropdown-item" href="../newproducts/index.html">新品发布</a>
+              <a class="dropdown-item" href="../newproducts/video.html">玩转视频</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="../products/index.html">产品中心</a>
+            <div>
+              <a class="dropdown-item" href="../products/index.html">庭院游乐设计</a>
+              <a class="dropdown-item" href="../products/index.html">卡通造型游乐器材设计</a>
+              <a class="dropdown-item" href="../products/index.html">微地形钻爬游乐器械设计</a>
+              <a class="dropdown-item" href="../products/index.html">园艺装饰设计</a>
+              <a class="dropdown-item" href="../products/index.html">常备游乐器材设计</a>
+              <a class="dropdown-item" href="../products/index.html">集中采购类产品</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">落地安装</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">合作案例</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <!-- 主区域 -->
@@ -134,9 +119,9 @@
           <div></div>
         </div>
       </div>
-      <div class="container home-about-content">
-        <div class="home-about-content-img"><img src="../../static/images/home_about_img.jpg" alt=""></div>
-        <div class="home-about-content-text">
+      <div class="row container home-about-content">
+        <div class="col-12 col-sm-4 home-about-content-img"><img src="../../static/images/home_about_img.jpg" alt=""></div>
+        <div class="col-12 col-sm-8 home-about-content-text">
           <p>北京童趣环创狮科技有限公司源于2010年创办的安艺幼儿空间装饰，是由一群有志于为儿童提供更美视觉空间的设计者创建；致力于为幼儿园提供融美学和教育学为一体的幼儿园空间的规划与设计，是儿童教育领域环境设计行业领导者。
           </p>
           <p>
@@ -287,7 +272,7 @@
             <li>
               <div class="home-product-li">
                 <img src="../../static/images/product/product02.jpg" alt="">
-                <h4>庭院游乐设计</h4>
+                <h4>卡通造型游乐器材设计</h4>
                 <div>
                   <div>
                     <h5>庭院游乐设计</h5>
@@ -300,7 +285,7 @@
             <li>
               <div class="home-product-li">
                 <img src="../../static/images/product/product03.jpg" alt="">
-                <h4>庭院游乐设计</h4>
+                <h4>微地形钻爬游乐器械设计</h4>
                 <div>
                   <div>
                     <h5>庭院游乐设计</h5>
@@ -313,7 +298,7 @@
             <li>
               <div class="home-product-li">
                 <img src="../../static/images/product/product04.jpg" alt="">
-                <h4>庭院游乐设计</h4>
+                <h4>园艺装饰设计</h4>
                 <div>
                   <div>
                     <h5>庭院游乐设计</h5>
@@ -326,7 +311,7 @@
             <li>
               <div class="home-product-li">
                 <img src="../../static/images/product/product05.jpg" alt="">
-                <h4>庭院游乐设计</h4>
+                <h4>卡通造型游乐器材</h4>
                 <div>
                   <div>
                     <h5>庭院游乐设计</h5>
@@ -339,7 +324,7 @@
             <li>
               <div class="home-product-li">
                 <img src="../../static/images/product/product06.jpg" alt="">
-                <h4>庭院游乐设计</h4>
+                <h4>新建园采购名录</h4>
                 <div>
                   <div>
                     <h5>庭院游乐设计</h5>
@@ -350,7 +335,7 @@
               </div>
               <div class="home-product-li">
                 <img src="../../static/images/product/product07.jpg" alt="">
-                <h4>庭院游乐设计</h4>
+                <h4>评级验收类采购名录</h4>
                 <div>
                   <div>
                     <h5>庭院游乐设计</h5>
@@ -380,10 +365,10 @@
         </div>
       </div>
       <div class="row home-video-main">
-        <div class="col-sm-7 home-video-play">
+        <div class="col-12 col-sm-7 home-video-play">
           <video src=""></video>
         </div>
-        <div class="home-video-info">
+        <div class="col-12 col-sm-4 home-video-info">
           <h5>北京童趣环创狮科技有限公司</h5>
           <p>源于2010年创办的安艺幼儿空间装饰，是由一群有志于为儿童提供更美视觉空间的设计者创建；致力于为幼儿园提供融美学和教育学为一体的幼儿园空间的规划与设计，是儿童教育领域环境设计行业领导者。</p>
           <div>
@@ -410,15 +395,19 @@
         <div class="home-case-box home-case-in">
           <img src="../../static/images/home_case01.jpg" alt="">
           <div class="home-case-info">
-            <h3>室内案例</h3>
-            <p>INDOOR CASE</p>
+            <div>
+              <h3>室内案例</h3>
+              <p>INDOOR CASE</p>
+            </div>
           </div>
         </div>
         <div class="home-case-box home-case-out">
           <img src="../../static/images/home_case02.jpg" alt="">
           <div class="home-case-info">
-            <h3>室外案例</h3>
-            <p>OUTDOOR CASE</p>
+            <div>
+              <h3>室外案例</h3>
+              <p>OUTDOOR CASE</p>
+            </div>
           </div>
         </div>
         <div class="home-case-bg"></div>
@@ -429,7 +418,7 @@
     <div class="home-data">
       <img src="../../static/images/home_data_banner.jpg" alt="">
       <div class="home-data-main">
-        <ul class="row">
+        <ul class="row container">
           <li class="col-4">
             <h3>2014+</h3>
             <p>超过2014次服务</p>
@@ -458,24 +447,24 @@
       </div>
       <div class="home-coop-main">
         <ul class="row">
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
-          <li class="col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo03.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo04.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo01.png" alt=""></li>
+          <li class="col-6 col-sm-2"><img src="../../static/images/coop/home_coop_logo02.png" alt=""></li>
         </ul>
       </div>
     </div>
@@ -483,68 +472,66 @@
   </section>
   <!-- 底部 -->
   <footer class="public-footer">
-      <div class="public-footer-arc"></div>
-      <div class="public-footer-container">
-          <div class="home-title home-title3">
-              <div class="home-title-l"></div>
-              <div class="home-title-c">
-                  <h2>联系我们</h2>
-                  <p>CONTACT US</p>
-              </div>
-              <div class="home-title-r"></div>
-          </div>
-          <div class="container public-footer-main">
-              <div class="row">
-                  <div class="col-sm-4 public-footer-ewm">
-                      <div class="col-sm-6">
-                          <img src="../../static/images/footer_ewm01.png" alt="">
-                          <p>加微信与总监亲自交流</p>
-                      </div>
-                      <div class="col-sm-6">
-                          <img src="../../static/images/footer_ewm01.png" alt="">
-                          <p>关注公众号了解更多</p>
-                      </div>
-                      <div class="public-footer-cutline"></div>
-                  </div>
-                  <div class="col-sm-3 public-footer-tel">
-                      <div>Tel/17301159839</div>
-                      <div>Mob/010-567898</div>
-                      <p>地址：北京市通州北关新光大中心-8A1412</p>
-                      <p>63571710@qq.com</p>
-                      <div class="public-footer-cutline"></div>
-                  </div>
-                  <div class="col-sm-3 public-footer-company">
-                      <h5>北京童趣环床狮科技有限公司</h5>
-                      <p>Beijing Space Creative Designer technology co. LTD</p>
-                      <div>
-                          <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
-                          <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
-                          <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
-                      </div>
-                      <div class="public-footer-cutline"></div>
-                  </div>
-                  <div class="col-sm-2 public-footer-news">
-                      <a href="">新闻中心</a>
-                      <a href="">原创观点</a>
-                      <a href="">公司新闻</a>
-                      <a href="">行业动态</a>
-                  </div>
-              </div>
-          </div>
-          <div class="public-footer-btm">
-              <div>友情链接: <a href="">北京安艺幼儿空间</a>、<a href="">青青藤国际幼儿园</a>、<a href="">金色摇篮教育集团</a>、<a href="">新浪</a>、<a
-                      href="">网易</a></div>
-              <p>Copyright © 2011-2012 Beijing Space Creative Designer technology co.LTD | 北京童趣环创科技有限公司 |
-                  京ICP备11009594号-1
-              </p>
-          </div>
+    <div class="public-footer-arc"></div>
+    <div class="public-footer-container">
+      <div class="home-title home-title3">
+        <div class="home-title-l"></div>
+        <div class="home-title-c">
+          <h2>联系我们</h2>
+          <p>CONTACT US</p>
+        </div>
+        <div class="home-title-r"></div>
       </div>
+      <div class="container public-footer-main">
+        <div class="row">
+          <div class="col-sm-4 public-footer-ewm">
+            <div class="col-sm-6">
+              <img src="../../static/images/footer_ewm01.png" alt="">
+              <p>加微信与总监亲自交流</p>
+            </div>
+            <div class="col-sm-6">
+              <img src="../../static/images/footer_ewm01.png" alt="">
+              <p>关注公众号了解更多</p>
+            </div>
+            <div class="public-footer-cutline"></div>
+          </div>
+          <div class="col-sm-3 public-footer-tel">
+            <div>Tel/17301159839</div>
+            <div>Mob/010-567898</div>
+            <p>地址：北京市通州北关新光大中心-8A1412</p>
+            <p>63571710@qq.com</p>
+            <div class="public-footer-cutline"></div>
+          </div>
+          <div class="col-sm-3 public-footer-company">
+            <h5>北京童趣环床狮科技有限公司</h5>
+            <p>Beijing Space Creative Designer technology co. LTD</p>
+            <div>
+              <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
+              <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
+              <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
+            </div>
+            <div class="public-footer-cutline"></div>
+          </div>
+          <div class="col-sm-2 public-footer-news">
+            <a href="">新闻中心</a>
+            <a href="">原创观点</a>
+            <a href="">公司新闻</a>
+            <a href="">行业动态</a>
+          </div>
+        </div>
+      </div>
+      <div class="public-footer-btm">
+        <div>友情链接: <a href="">北京安艺幼儿空间</a>、<a href="">青青藤国际幼儿园</a>、<a href="">金色摇篮教育集团</a>、<a href="">新浪</a>、<a
+            href="">网易</a></div>
+        <p>Copyright © 2011-2012 Beijing Space Creative Designer technology co.LTD | 北京童趣环创科技有限公司 |
+          京ICP备11009594号-1
+        </p>
+      </div>
+    </div>
   </footer>
 
   <script>
-    // $('#newproduct1').kxbdMarquee({
-    //   isEqual: false
-    // });
+
   </script>
 </body>
 

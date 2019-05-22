@@ -13,71 +13,55 @@
     <script src="../../static/libs/jquery-3.2.1.min.js"></script>
     <script src="../../static/libs/popper.min.js"></script>
     <script src="../../static/libs/bootstrap4/js/bootstrap.min.js"></script>
-    <script src="../../static/libs/jquery.kxbdmarquee.js"></script>
-    <script type="text/javascript">
-        window.onresize = function () {
-            resize()
-        }
-        function resize() {
-            var rem = 0;
-            var htmlDOM = document.documentElement;
-            var currentWidth = htmlDOM.clientWidth;
-            rem = currentWidth / 12;
-            htmlDOM.style.fontSize = rem + 'px';
-        }
-        resize();
-    </script>
+    <script src="../../static/js/common.js"></script>
 </head>
 
 <body>
     <!-- 头部 -->
     <header class="fixed-top public-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <a class="navbar-brand" href="/"><img src="../../static/images/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">关于环创狮</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">
-                                新品发布
-                            </a>
-                            <div>
-                                <a class="dropdown-item" href="#">新品发布</a>
-                                <a class="dropdown-item" href="#">玩转视频</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">产品中心</a>
-                            <div>
-                                <a class="dropdown-item" href="#">庭院游乐设计</a>
-                                <a class="dropdown-item" href="#">卡通造型游乐器材设计</a>
-                                <a class="dropdown-item" href="#">微地形钻爬游乐器械设计</a>
-                                <a class="dropdown-item" href="#">园艺装饰设计</a>
-                                <a class="dropdown-item" href="#">常备游乐器材设计</a>
-                                <a class="dropdown-item" href="#">集中采购类产品</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">落地安装</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">合作案例</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/"><img src="../../static/images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../home/index.html">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">关于环创狮</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                            新品发布
+                        </a>
+                        <div>
+                            <a class="dropdown-item" href="../newproducts/index.html">新品发布</a>
+                            <a class="dropdown-item" href="../newproducts/video.html">玩转视频</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../products/index.html">产品中心</a>
+                        <div>
+                            <a class="dropdown-item" href="../products/index.html">庭院游乐设计</a>
+                            <a class="dropdown-item" href="../products/index.html">卡通造型游乐器材设计</a>
+                            <a class="dropdown-item" href="../products/index.html">微地形钻爬游乐器械设计</a>
+                            <a class="dropdown-item" href="../products/index.html">园艺装饰设计</a>
+                            <a class="dropdown-item" href="../products/index.html">常备游乐器材设计</a>
+                            <a class="dropdown-item" href="../products/index.html">集中采购类产品</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">落地安装</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">合作案例</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- 主区域 -->
@@ -123,79 +107,81 @@
         </div>
 
         <div class="products-list-main">
-            <div class="products-list-nav">
-                <ul>
-                    <li class="active"><a href="">
-                            <h2>幼儿园庭院游乐设计</h2>
-                        </a></li>
-                    <li><a href="">
-                            <h2>卡通造型游乐器材设计</h2>
-                        </a></li>
-                    <li><a href="">
-                            <h2>微地形钻爬游乐器械设计</h2>
-                        </a></li>
-                    <li><a href="">
-                            <h2>园艺装饰设计</h2>
-                        </a></li>
-                    <li><a href="">
-                            <h2>常备游乐器材设计</h2>
-                        </a></li>
-                    <li><a href="">
-                            <h2>集中采购类产品</h2>
-                        </a></li>
-                </ul>
-            </div>
-            <div class="products-list-content">
-                <div class="products-list-title">
-                    <h1>产品中心</h1>
+            <div class="container">
+                <div class="products-list-nav">
+                    <ul>
+                        <li class="active"><a href="">
+                                <h2>幼儿园庭院游乐设计</h2>
+                            </a></li>
+                        <li><a href="">
+                                <h2>卡通造型游乐器材设计</h2>
+                            </a></li>
+                        <li><a href="">
+                                <h2>微地形钻爬游乐器械设计</h2>
+                            </a></li>
+                        <li><a href="">
+                                <h2>园艺装饰设计</h2>
+                            </a></li>
+                        <li><a href="">
+                                <h2>常备游乐器材设计</h2>
+                            </a></li>
+                        <li><a href="">
+                                <h2>集中采购类产品</h2>
+                            </a></li>
+                    </ul>
                 </div>
-                <div class="products-detail-show">
-                    <div class="products-detail-area1">
-                        <div class="col-sm-5 products-detail-area1-l">
-                            <img src="../../static/images/product/1/logo01.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7 products-detail-area1-r">
-                            <div>
+                <div class="products-list-content">
+                    <div class="products-list-title">
+                        <h1>产品中心</h1>
+                    </div>
+                    <div class="products-detail-show">
+                        <div class="products-detail-area1">
+                            <div class="col-sm-5 products-detail-area1-l">
+                                <img src="../../static/images/product/1/logo01.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7 products-detail-area1-r">
                                 <div>
-                                    <strong>项目名称：</strong>
-                                    <span>金色西溪幼儿园</span>
-                                </div>
-                                <div>
-                                    <strong>核心功能：</strong>
-                                    <span>树屋、微地形、秋千、绳网、钻洞和沙池。</span>
-                                </div>
-                                <div>
-                                    <strong>色彩方案：</strong>
-                                    <span>主体颜色原木色与绿色</span>
-                                </div>
-                                <div>
-                                    <strong>设计理念：</strong>
                                     <div>
-                                        <p>——现代建筑与天然元素浑然一体，交相辉映。</p>
-                                        <p>幼儿园所的建筑环境为当代城市风格，因此设计师以大量象征天然的原木、草地结合现代感的造型将自然性、舒适性，科技感结合在一起。我们给予小朋友的不只是简单的钻爬跑跳，绿色园林的环境呵护，更将天然与人设，田园与城市和谐相融、平衡的新自然意识传递给儿童。
-                                        </p>
+                                        <strong>项目名称：</strong>
+                                        <span>金色西溪幼儿园</span>
+                                    </div>
+                                    <div>
+                                        <strong>核心功能：</strong>
+                                        <span>树屋、微地形、秋千、绳网、钻洞和沙池。</span>
+                                    </div>
+                                    <div>
+                                        <strong>色彩方案：</strong>
+                                        <span>主体颜色原木色与绿色</span>
+                                    </div>
+                                    <div>
+                                        <strong>设计理念：</strong>
+                                        <div>
+                                            <p>——现代建筑与天然元素浑然一体，交相辉映。</p>
+                                            <p>幼儿园所的建筑环境为当代城市风格，因此设计师以大量象征天然的原木、草地结合现代感的造型将自然性、舒适性，科技感结合在一起。我们给予小朋友的不只是简单的钻爬跑跳，绿色园林的环境呵护，更将天然与人设，田园与城市和谐相融、平衡的新自然意识传递给儿童。
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="products-detail-area2">
+                            <div class="products-detail-img">
+                                <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
+                                <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
+                            </div>
+                            <p><strong>创意点：</strong>现代建筑的绿岛；代表速度的黑色柏油路、红色跑车、大片的田野绿色，形成一个对比分明的美的有机体。</p>
+                            <div class="products-detail-img">
+                                <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
+                                <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
+                            </div>
+                            <p><strong>创意点：</strong>现代建筑的绿岛；代表速度的黑色柏油路、红色跑车、大片的田野绿色，形成一个对比分明的美的有机体。</p>
+                            <div class="products-detail-img">
+                                <img src="../../static/images/product/1/logo01.jpg" alt="" width="100%">
+                            </div>
+                            <p><strong>创意点：</strong>现代建筑的绿岛；代表速度的黑色柏油路、红色跑车、大片的田野绿色，形成一个对比分明的美的有机体。</p>
+                        </div>
+                        <a href="javascript:;" class="products-detail-back" onclick="history.back()">返回</a>
                     </div>
-                    <div class="products-detail-area2">
-                        <div class="products-detail-img">
-                            <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
-                            <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
-                        </div>
-                        <p><strong>创意点：</strong>现代建筑的绿岛；代表速度的黑色柏油路、红色跑车、大片的田野绿色，形成一个对比分明的美的有机体。</p>
-                        <div class="products-detail-img">
-                            <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
-                            <img src="../../static/images/product/1/logo01.jpg" alt="" width="49%">
-                        </div>
-                        <p><strong>创意点：</strong>现代建筑的绿岛；代表速度的黑色柏油路、红色跑车、大片的田野绿色，形成一个对比分明的美的有机体。</p>
-                        <div class="products-detail-img">
-                            <img src="../../static/images/product/1/logo01.jpg" alt="" width="100%">
-                        </div>
-                        <p><strong>创意点：</strong>现代建筑的绿岛；代表速度的黑色柏油路、红色跑车、大片的田野绿色，形成一个对比分明的美的有机体。</p>
-                    </div>
-                    <a href="javascript:;" class="products-detail-back" onclick="history.back()">返回</a>
                 </div>
             </div>
         </div>
