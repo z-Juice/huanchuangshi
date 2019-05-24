@@ -110,22 +110,22 @@
       <div class="container">
         <div class="products-list-nav">
           <ul>
-            <li class="active"><a href="">
+            <li class="active" data-url="list1"><a href="">
                 <h2>幼儿园庭院游乐设计</h2>
               </a></li>
-            <li><a href="">
+            <li data-url="list2"><a href="">
                 <h2>卡通造型游乐器材设计</h2>
               </a></li>
-            <li><a href="">
+            <li data-url="list3"><a href="">
                 <h2>微地形钻爬游乐器械设计</h2>
               </a></li>
-            <li><a href="">
+            <li data-url="list4"><a href="">
                 <h2>园艺装饰设计</h2>
               </a></li>
-            <li><a href="">
+            <li data-url="list5"><a href="">
                 <h2>常备游乐器材设计</h2>
               </a></li>
-            <li><a href="">
+            <li data-url="list6"><a href="">
                 <h2>集中采购类产品</h2>
               </a></li>
           </ul>
@@ -228,7 +228,14 @@
   </footer>
 
   <script>
-
+    var _url = location.href;
+    var _attr = $('.products-list-nav li').attr('data-url');
+    $('.products-list-nav li').each(function(index,item){
+      var _current = $(item).attr('data-url');
+      if(_url.indexOf(_current) != -1){
+        $(this).addClass('active').siblings().removeClass('active')
+      }
+    })
   </script>
 </body>
 
