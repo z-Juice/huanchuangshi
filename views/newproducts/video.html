@@ -32,8 +32,14 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="../home/index.html">首页 <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">关于环创狮</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../about/index.html">关于环创狮</a>
+                        <div>
+                            <a class="dropdown-item" href="../about/index.html#1">关于环创狮</a>
+                            <a class="dropdown-item" href="../about/index.html#2">专家团队</a>
+                            <a class="dropdown-item" href="../about/index.html#3">战略合作</a>
+                            <a class="dropdown-item" href="../about/index.html#4">新闻动态</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="../newproducts/index.html">新品发布</a>
@@ -53,11 +59,22 @@
                             <a class="dropdown-item" href="../products/index.html">集中采购类产品</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">落地安装</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../installation/index.html">落地安装</a>
+                        <div>
+                            <a class="dropdown-item" href="../installation/index.html#1">现场指导图</a>
+                            <a class="dropdown-item" href="../installation/index.html#2">工厂制作图</a>
+                            <a class="dropdown-item" href="../installation/index.html#3">材质的各种标准与抛面</a>
+                            <a class="dropdown-item" href="../installation/index.html#4">落地实景图</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">合作案例</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../cooperation/index.html">合作案例</a>
+                        <div>
+                            <a class="dropdown-item" href="../cooperation/index.html">室内</a>
+                            <a class="dropdown-item" href="../cooperation/outdoor.html">室外</a>
+                            <a class="dropdown-item" href="../cooperation/brand.html">合作品牌</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -111,12 +128,12 @@
                 <div class="products-list-nav">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="../newproducts/index.html">
                                 <h2>新品发布</h2>
                             </a>
                         </li>
                         <li class="active">
-                            <a href="">
+                            <a href="../newproducts/video.html">
                                 <h2>玩转视频</h2>
                             </a>
                         </li>
@@ -127,10 +144,10 @@
                         <h1>玩转视频</h1>
                     </div>
                     <div class="newproducts-video-show">
-                        <div class="col-sm-7 video_wrap">
-                            <video src="movies/movie.mp4" autoplay></video>
+                        <div class="col-12 col-sm-7 video_wrap">
+                            <video src="" autoplay></video>
                         </div>
-                        <div class="col-sm-5 video_list">
+                        <div class="col-12 col-sm-5 video_list">
                             <ul>
                                 <li data-src="movies/mov_bbb.ogg">
                                     <img src="" alt="">
@@ -153,64 +170,102 @@
         </div>
 
     </section>
+
+    <!-- 留言咨询 -->
+    <div class="nav-right">
+        <ul>
+            <li class="nav-right-advisory">
+                <p>留言咨询</p>
+            </li>
+            <li class="backtop hide" style="display: none;"><img src="../../static/images/backtoplogo.png" alt=""></li>
+        </ul>
+    </div>
+
+    <div class="public-form public-advisory hide">
+        <div class="public-form-head">
+            <span>填写信息</span>
+            <img src="../../static/images/exit.png" alt="" class="public-form-exit">
+        </div>
+        <div class="public-form-body">
+            <form id="attemptForm">
+                <div class="public-form-list">
+                    <label for="name" class="required">姓名</label>
+                    <br>
+                    <input type="text" name="name" id="name" value="">
+                    <p class="public-form-error hidden">请输入有效的姓名</p>
+                </div>
+                <div class="public-form-list">
+                    <label for="phone" class="required">手机</label>
+                    <br>
+                    <input type="text" name="phone" id="phone" value="">
+                    <p class="public-form-error hidden">请输入有效的手机号码</p>
+                </div>
+                <div class="public-form-list">
+                    <label for="company">留言内容</label>
+                    <br>
+                    <textarea type="text" name="content" id="content" value=""></textarea>
+                </div>
+            </form>
+            <button id="submit" disabled="">提交</button>
+        </div>
+    </div>
+
+    <div class="mask hide"></div>
+
     <!-- 底部 -->
     <footer class="public-footer">
-      <div class="public-footer-arc"></div>
-      <div class="public-footer-container">
-        <div class="home-title home-title3">
-          <div class="home-title-l"></div>
-          <div class="home-title-c">
-            <h2>联系我们</h2>
-            <p>CONTACT US</p>
-          </div>
-          <div class="home-title-r"></div>
+        <div class="public-footer-arc"></div>
+        <div class="public-footer-container">
+            <div class="home-title home-title3">
+                <div class="home-title-l"></div>
+                <div class="home-title-c">
+                    <h2>联系我们</h2>
+                    <p>CONTACT US</p>
+                </div>
+                <div class="home-title-r"></div>
+            </div>
+            <div class="container public-footer-main">
+                <div class="row">
+                    <div class="col-6 col-sm-4 public-footer-ewm">
+                        <div class="col-5 col-sm-6 offset-6 offset-sm-5">
+                            <img src="../../static/images/footer_ewm.jpg" alt="">
+                            <p>关注公众号了解更多</p>
+                        </div>
+                        <div class="public-footer-cutline"></div>
+                    </div>
+                    <div class="col-6 col-sm-4 public-footer-tel">
+                        <div>郑经理：15810917535</div>
+                        <p>邮箱：327731349@qq.com</p>
+                        <p>地址：北京市通州区富力运河十号B02号楼14层1421室</p>
+                        <div class="public-footer-cutline"></div>
+                    </div>
+                    <div class="col-sm-4 public-footer-company">
+                        <div>
+                            <h5>北京童趣环床狮科技有限公司</h5>
+                            <p>Beijing Space Creative Designer technology co. LTD</p>
+                        </div>
+                        <!-- <div>
+                  <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
+                  <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
+                  <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
+                </div>
+                <div class="public-footer-cutline"></div> -->
+                    </div>
+                    <!-- <div class="col-sm-2 public-footer-news">
+                <a href="">新闻中心</a>
+                <a href="">原创观点</a>
+                <a href="">公司新闻</a>
+                <a href="">行业动态</a>
+              </div> -->
+                </div>
+            </div>
+            <div class="public-footer-btm">
+                <div>友情链接: <a href="">北京安艺幼儿空间</a>、<a href="">青青藤国际幼儿园</a>、<a href="">金色摇篮教育集团</a>、<a href="">新浪</a>、<a
+                        href="">网易</a></div>
+                <p>Copyright © 2011-2012 Beijing Space Creative Designer technology co.LTD | 北京童趣环创科技有限公司 |
+                    京ICP备11009594号-1</p>
+            </div>
         </div>
-        <div class="container public-footer-main">
-          <div class="row">
-            <div class="col-6 col-sm-4 public-footer-ewm">
-              <div class="col-5 col-sm-6">
-                <img src="../../static/images/footer_ewm01.png" alt="">
-                <p>加微信与总监亲自交流</p>
-              </div>
-              <div class="col-5 col-sm-6">
-                <img src="../../static/images/footer_ewm01.png" alt="">
-                <p>关注公众号了解更多</p>
-              </div>
-              <div class="public-footer-cutline"></div>
-            </div>
-            <div class="col-6 col-sm-3 public-footer-tel">
-              <div>Tel/17301159839</div>
-              <div>Mob/010-567898</div>
-              <p>地址：北京市通州北关新光大中心-8A1412</p>
-              <p>63571710@qq.com</p>
-              <div class="public-footer-cutline"></div>
-            </div>
-            <div class="col-sm-3 public-footer-company">
-              <h5>北京童趣环床狮科技有限公司</h5>
-              <p>Beijing Space Creative Designer technology co. LTD</p>
-              <div>
-                <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
-                <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
-                <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
-              </div>
-              <div class="public-footer-cutline"></div>
-            </div>
-            <div class="col-sm-2 public-footer-news">
-              <a href="">新闻中心</a>
-              <a href="">原创观点</a>
-              <a href="">公司新闻</a>
-              <a href="">行业动态</a>
-            </div>
-          </div>
-        </div>
-        <div class="public-footer-btm">
-          <div>友情链接: <a href="">北京安艺幼儿空间</a>、<a href="">青青藤国际幼儿园</a>、<a href="">金色摇篮教育集团</a>、<a href="">新浪</a>、<a
-              href="">网易</a></div>
-          <p>Copyright © 2011-2012 Beijing Space Creative Designer technology co.LTD | 北京童趣环创科技有限公司 |
-            京ICP备11009594号-1
-          </p>
-        </div>
-      </div>
     </footer>
 
     <script>

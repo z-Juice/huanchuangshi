@@ -315,6 +315,10 @@ button:focus {
         text-align: center;
         font-size: .14rem;
     }
+    
+    .public-header .dropdown:hover div {
+        display: none;
+    }
 }
 
 /* 公共底部 */
@@ -510,6 +514,7 @@ button:focus {
     position: fixed;
     bottom: .8rem;
     right: .15rem;
+    z-index: 999;
 }
 .nav-right li {
     width: .3rem;
@@ -532,7 +537,17 @@ button:focus {
 .nav-right .backtop img {
     width: 100%;
 }
+@media (max-width: 992px) {
+    .nav-right li {
+        font-size: .08rem;
+    }
+    .nav-right li p {
+        line-height: 1.4;
+        padding: .02rem .04rem;
+    }
+}
 
+/* 留言弹框 */
 .public-form {
     position: fixed;
     top: 50%;
@@ -1638,16 +1653,22 @@ button:focus {
     font-size: .1375rem;
     font-weight: normal;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.products-list-nav li.active,
-.products-list-nav li:hover {
+.products-list-nav li.active {
     background-color: #ff983d;
 }
 
 .products-list-nav li.active h2,
-.products-list-nav li:hover h2 {
+.products-list-nav li.active:hover h2 {
     color: #fff;
+}
+
+.products-list-nav li:hover h2 {
+    color: #ff983d;
 }
 
 .products-list-content {
@@ -1733,7 +1754,7 @@ button:focus {
     }
 
     .products-list-nav li h2 {
-        width: .8rem;
+        width: .7rem;
         height: .25rem;
         line-height: .25rem;
         font-size: .12rem;
@@ -1855,7 +1876,7 @@ button:focus {
 
     .newproducts-list-show li {
         width: 48%;
-        margin-bottom: .1rem;
+        margin-bottom: .08rem;
     }
 
     .newproducts-list-show li:nth-child(3n),
@@ -1880,6 +1901,7 @@ button:focus {
 }
 
 .newproducts-video-show .video_wrap video {
+    width: 100%;
     height: 2.75rem;
 }
 
@@ -1912,6 +1934,12 @@ button:focus {
     font-size: .075rem
 }
 
+@media (max-width: 992px) {
+    .newproducts-video-show {
+        flex-wrap: wrap;
+    }
+}
+
 /* 落地安装 */
 .install-list-show {
     padding-top: .24rem;
@@ -1926,6 +1954,17 @@ button:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .install-list-show {
+        padding-top: .1rem;
+    }
+    .install-list-show li {
+        width: 48%;
+        margin-left: 2%;
+        margin-top: .08rem;
+    }
 }
 
 /* 合作案例 */
@@ -1977,6 +2016,7 @@ button:focus {
 }
 .coop-detail-info {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: .2rem;
 }
 .coop-detail-info-l {
@@ -2017,6 +2057,31 @@ button:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .coop-list-show {
+        padding-top: .1rem;
+    }
+    .coop-list-show li {
+        margin-top: .08rem;
+        width: 48%;
+        margin-left: 2%;
+    }
+    .coop-list-show li h3 {
+        height: .24rem;
+        line-height: .24rem;
+    }
+    .coop-detail-show {
+        padding-left: 0;
+    }
+    .coop-brand-show {
+        min-height: 1.8rem;
+        padding-top: .1rem;
+    }
+    .coop-brand-show li {
+        padding: .1rem;
+    }
 }
 
 /* 关于环创狮 */
@@ -2230,4 +2295,14 @@ button:focus {
     justify-content: flex-end;
     flex: 1;
     padding-right: .08rem;
+}
+
+@media (max-width: 992px) {
+    .about-list03 {
+        padding: .2rem .1rem;
+    }
+    .about-list03-pact ul li {
+        padding-left: .02rem;
+        padding-right: .02rem;
+    }
 }

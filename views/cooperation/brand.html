@@ -125,20 +125,20 @@
 
     <div class="products-list-main">
       <div class="container">
-        <div class="products-list-nav">
+        <div class="products-list-nav coop-list-nav">
           <ul>
             <li>
-              <a href="javascript:;">
+              <a href="../cooperation/index.html">
                 <h2>室内</h2>
               </a>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href="../cooperation/outdoor.html">
                 <h2>室外</h2>
               </a>
             </li>
             <li class="active">
-              <a href="javascript:;">
+              <a href="../cooperation/brand.html">
                 <h2>合作品牌</h2>
               </a>
             </li>
@@ -200,6 +200,48 @@
     </div>
 
   </section>
+
+  <!-- 留言咨询 -->
+  <div class="nav-right">
+    <ul>
+      <li class="nav-right-advisory">
+        <p>留言咨询</p>
+      </li>
+      <li class="backtop hide" style="display: none;"><img src="../../static/images/backtoplogo.png" alt=""></li>
+    </ul>
+  </div>
+
+  <div class="public-form public-advisory hide">
+    <div class="public-form-head">
+      <span>填写信息</span>
+      <img src="../../static/images/exit.png" alt="" class="public-form-exit">
+    </div>
+    <div class="public-form-body">
+      <form id="attemptForm">
+        <div class="public-form-list">
+          <label for="name" class="required">姓名</label>
+          <br>
+          <input type="text" name="name" id="name" value="">
+          <p class="public-form-error hidden">请输入有效的姓名</p>
+        </div>
+        <div class="public-form-list">
+          <label for="phone" class="required">手机</label>
+          <br>
+          <input type="text" name="phone" id="phone" value="">
+          <p class="public-form-error hidden">请输入有效的手机号码</p>
+        </div>
+        <div class="public-form-list">
+          <label for="company">留言内容</label>
+          <br>
+          <textarea type="text" name="content" id="content" value=""></textarea>
+        </div>
+      </form>
+      <button id="submit" disabled="">提交</button>
+    </div>
+  </div>
+
+  <div class="mask hide"></div>
+
   <!-- 底部 -->
   <footer class="public-footer">
     <div class="public-footer-arc"></div>
@@ -233,18 +275,18 @@
               <p>Beijing Space Creative Designer technology co. LTD</p>
             </div>
             <!-- <div>
-              <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
-              <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
-              <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
-            </div>
-            <div class="public-footer-cutline"></div> -->
+                <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
+                <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
+                <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
+              </div>
+              <div class="public-footer-cutline"></div> -->
           </div>
           <!-- <div class="col-sm-2 public-footer-news">
-            <a href="">新闻中心</a>
-            <a href="">原创观点</a>
-            <a href="">公司新闻</a>
-            <a href="">行业动态</a>
-          </div> -->
+              <a href="">新闻中心</a>
+              <a href="">原创观点</a>
+              <a href="">公司新闻</a>
+              <a href="">行业动态</a>
+            </div> -->
         </div>
       </div>
       <div class="public-footer-btm">
@@ -256,7 +298,7 @@
   </footer>
 
   <script>
-    
+
   </script>
 </body>
 
