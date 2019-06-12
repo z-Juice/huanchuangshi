@@ -9,11 +9,10 @@
   <meta name="keywords" content="环创狮">
   <meta name="description" content="环创狮">
   <link rel="stylesheet" href="../../static/libs/bootstrap4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/animate.min.css" />
   <link rel="stylesheet" href="../../static/css/style.css">
   <script src="../../static/libs/jquery-3.2.1.min.js"></script>
-  <script src="../../static/libs/popper.min.js"></script>
   <script src="../../static/libs/bootstrap4/js/bootstrap.min.js"></script>
-  <script src="../../static/js/common.js"></script>
 </head>
 
 <body>
@@ -28,7 +27,7 @@
         <span class="navbar-toggler-icon1"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" id="navbar">
           <li class="nav-item active">
             <a class="nav-link" href="../home/index.html">首页 <span class="sr-only">(current)</span></a>
           </li>
@@ -44,8 +43,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link" href="../newproducts/index.html">新品发布</a>
             <div>
-              <a class="dropdown-item" href="../newproducts/index.html">新品发布</a>
-              <a class="dropdown-item" href="../newproducts/video.html">玩转视频</a>
+              <a class="dropdown-item" href="../newproducts/index.html#1">新品发布</a>
+              <a class="dropdown-item" href="../newproducts/index.html#2">玩转视频</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -125,37 +124,40 @@
     <!-- 关于我们 -->
     <div class="home-about">
       <div class="home-title">
-        <div class="home-title-l">
+        <div class="home-title-l hidden">
           <div></div>
         </div>
         <div class="home-title-c">
-          <h2>关于环创狮</h2>
-          <p>ABOUT US</p>
+          <h2 class="hidden">关于环创狮</h2>
+          <p class="hidden">ABOUT US</p>
         </div>
-        <div class="home-title-r">
+        <div class="home-title-r hidden">
           <div></div>
         </div>
       </div>
       <div class="row container home-about-content">
-        <div class="col-sm-4 home-about-content-img"><img src="../../static/images/home_about_img.jpg" alt=""></div>
+        <div class="col-sm-4 home-about-content-img hidden"><img src="../../static/images/home_about_img.jpg" alt="">
+        </div>
         <div class="col-sm-8 home-about-content-text">
-          <p>北京童趣环创狮科技有限公司源于2010年创办的安艺幼儿空间装饰，是由一群有志于为儿童提供更美视觉空间的设计者创建；致力于为幼儿园提供融美学和教育学为一体的幼儿园空间的规划与设计，是儿童教育领域环境设计行业领导者。
+          <p class="hidden">
+            北京童趣环创狮科技有限公司源于2010年创办的安艺幼儿空间装饰，是由一群有志于为儿童提供更美视觉空间的设计者创建；致力于为幼儿园提供融美学和教育学为一体的幼儿园空间的规划与设计，是儿童教育领域环境设计行业领导者。
           </p>
-          <p>
+          <p class="hidden">
             环创狮;是一个有情怀有梦想的群体，笃信设计创造价值，环境造就成长。。以真爱给予孩子、以诚挚，取信于优秀幼儿园，以专业赢口碑于幼教界。服务的对象遍布国内数百个大中城市，包括三百多家幼儿园、早教、幼儿游泳、英语培训等幼教机构。
           </p>
-          <p>
+          <p class="hidden">
             未来环创狮我们的儿童空间设计和搭建将会延伸到更多城市，更多的儿童活动空间，从活动区角构建到玩教具、从墙面装饰到节庆活动的视觉元素……环创狮提供专业优质的儿童环境整合服务，让更多的的孩子和教育机构受惠于环创狮的出色创意和美......
           </p>
         </div>
         <div class="home-about-content-text1">
-          <p>北京童趣环创狮科技有限公司是一家以设计驱动产品，集设计--生产--落地于一体的创意型公司。</p>
-          <p>北京童趣环创狮科技有限公司源于2010年创办的北京安艺幼儿空间。环创狮是一个有情怀有梦想的群体，笃信设计创造价值，环境造就成长。环创狮矢志于创造具有鲜明个性及高度契合教育场景的园所空间,是众多强势幼教品牌的合作者。
+          <p class="hidden">北京童趣环创狮科技有限公司是一家以设计驱动产品，集设计--生产--落地于一体的创意型公司。</p>
+          <p class="hidden">
+            北京童趣环创狮科技有限公司源于2010年创办的北京安艺幼儿空间。环创狮是一个有情怀有梦想的群体，笃信设计创造价值，环境造就成长。环创狮矢志于创造具有鲜明个性及高度契合教育场景的园所空间,是众多强势幼教品牌的合作者。
           </p>
-          <p>我们拒绝平庸，为创造而生,为颠覆而行。聚集智慧,诞生文明。</p>
+          <p class="hidden">我们拒绝平庸，为创造而生,为颠覆而行。聚集智慧,诞生文明。</p>
         </div>
-        <div class="home-about-content-more">
-          <a href="">
+        <div class="home-about-content-more hidden">
+          <a href="../about/index.html">
             <span>MORE</span>
             <img src="../../static/images/home_about_more.png" alt="">
           </a>
@@ -167,28 +169,28 @@
     <div class="home-step">
       <div class="container">
         <ul>
-          <li>
+          <li class="hidden">
             <div>
               <h3>环创狮</h3>
               <h5>环境创意设计师</h5>
               <p>Space Creative Designer</p>
             </div>
           </li>
-          <li>
+          <li class="hidden">
             <div>
               <h3>环创狮使命</h3>
               <h5>与孩子们一起创造更美空间</h5>
               <p>Let’s create<br />harmonious/better space<br />with children together</p>
             </div>
           </li>
-          <li>
+          <li class="hidden">
             <div>
               <h3>环创狮定位</h3>
               <h5>我们是孩子们的环创狮</h5>
               <p>We are Space Creative<br />Designer for childhood / young<br />generation</p>
             </div>
           </li>
-          <li>
+          <li class="hidden">
             <div>
               <h3>环创狮设计一切美好事物</h3>
               <p>We design everything wonderfully</p>
@@ -200,86 +202,50 @@
     <!-- 新品 -->
     <div class="home-newproduct">
       <div class="home-title home-title2">
-        <div class="home-title-l">
+        <div class="home-title-l hidden">
           <div></div>
         </div>
         <div class="home-title-c">
-          <h2>新品发布</h2>
-          <p>New product release</p>
+          <h2 class="hidden">新品发布</h2>
+          <p class="hidden">New product release</p>
         </div>
-        <div class="home-title-r">
+        <div class="home-title-r hidden">
           <div></div>
         </div>
       </div>
       <div class="home-newproduct-main">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs container" role="tablist">
-          <li role="presentation"><a href="#newproduct1" aria-controls="newproduct1" role="tab" data-toggle="tab"
-              class="active show" id="newproductnav1">ALL</a></li>
-          <li role="presentation"><a href="#newproduct2" aria-controls="newproduct2" role="tab" data-toggle="tab"
-              id="newproductnav2">新品发布</a></li>
-          <li role="presentation"><a href="#newproduct3" aria-controls="newproduct3" role="tab" data-toggle="tab"
-              id="newproductnav3">获奖产品</a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="newproduct1">
-            <ul class="clearfix">
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-            </ul>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="newproduct2">
-            <ul class="clearfix">
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-            </ul>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="newproduct3">
-            <ul class="clearfix">
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
-              <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
-            </ul>
-          </div>
+        <div class="home-newproduct-content">
+          <ul class="clearfix">
+            <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
+            <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
+            <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
+            <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
+            <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
+            <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
+            <li><img src="../../static/images/product/home_product_logo01.jpg" alt=""></li>
+            <li><img src="../../static/images/product/home_product_logo02.jpg" alt=""></li>
+          </ul>
         </div>
       </div>
     </div>
     <!-- 产品中心 -->
     <div class="home-product">
       <div class="home-title">
-        <div class="home-title-l">
+        <div class="home-title-l hidden">
           <div></div>
         </div>
         <div class="home-title-c">
-          <h2>产品中心</h2>
-          <p>Product center</p>
+          <h2 class="hidden">产品中心</h2>
+          <p class="hidden">Product center</p>
         </div>
-        <div class="home-title-r">
+        <div class="home-title-r hidden">
           <div></div>
         </div>
       </div>
       <div class="container home-product-main">
         <div class="home-product-list">
           <ul class="clearfix">
-            <li>
+            <li class="hidden">
               <div class="home-product-li">
                 <img src="../../static/images/product/product01.jpg" alt="">
                 <h4>庭院游乐设计</h4>
@@ -292,7 +258,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="hidden">
               <div class="home-product-li">
                 <img src="../../static/images/product/product02.jpg" alt="">
                 <h4>卡通造型游乐器材设计</h4>
@@ -305,7 +271,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="hidden">
               <div class="home-product-li">
                 <img src="../../static/images/product/product03.jpg" alt="">
                 <h4>微地形钻爬游乐器械设计</h4>
@@ -318,7 +284,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="hidden">
               <div class="home-product-li">
                 <img src="../../static/images/product/product04.jpg" alt="">
                 <h4>园艺装饰设计</h4>
@@ -331,7 +297,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="hidden">
               <div class="home-product-li">
                 <img src="../../static/images/product/product05.jpg" alt="">
                 <h4>卡通造型游乐器材</h4>
@@ -344,7 +310,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="hidden">
               <div class="home-product-li">
                 <img src="../../static/images/product/product06.jpg" alt="">
                 <h4>新建园采购名录</h4>
@@ -376,26 +342,26 @@
     <!-- 玩转视频 -->
     <div class="home-video clearfix">
       <div class="home-title home-title2">
-        <div class="home-title-l">
+        <div class="home-title-l hidden">
           <div></div>
         </div>
         <div class="home-title-c">
-          <h2>玩转视频</h2>
-          <p>PLAY VIDEO</p>
+          <h2 class="hidden">玩转视频</h2>
+          <p class="hidden">PLAY VIDEO</p>
         </div>
-        <div class="home-title-r">
+        <div class="home-title-r hidden">
           <div></div>
         </div>
       </div>
       <div class="row home-video-main">
-        <div class="col-12 col-sm-7 home-video-play">
-          <video src=""></video>
+        <div class="col-12 col-sm-8 home-video-play">
+          <video src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc" controls></video>
         </div>
-        <div class="col-12 col-sm-4 home-video-info">
+        <div class="col-12 col-sm-3 home-video-info">
           <h5>北京童趣环创狮科技有限公司</h5>
           <p>源于2010年创办的安艺幼儿空间装饰，是由一群有志于为儿童提供更美视觉空间的设计者创建；致力于为幼儿园提供融美学和教育学为一体的幼儿园空间的规划与设计，是儿童教育领域环境设计行业领导者。</p>
           <div>
-            <img src="../../static/images/lionlogo.png" alt="">
+            <img src="../../static/images/lionlogo.png" alt="" class="hidden">
           </div>
         </div>
       </div>
@@ -403,19 +369,19 @@
     <!-- 合作案例 -->
     <div class="home-case">
       <div class="home-title">
-        <div class="home-title-l">
+        <div class="home-title-l hidden">
           <div></div>
         </div>
         <div class="home-title-c">
-          <h2>合作案例</h2>
-          <p>COOPERATION CASE</p>
+          <h2 class="hidden">合作案例</h2>
+          <p class="hidden">COOPERATION CASE</p>
         </div>
-        <div class="home-title-r">
+        <div class="home-title-r hidden">
           <div></div>
         </div>
       </div>
       <div class="home-case-main clearfix">
-        <div class="home-case-box home-case-in">
+        <div class="home-case-box home-case-in hidden">
           <img src="../../static/images/home_case01.jpg" alt="">
           <div class="home-case-info">
             <div>
@@ -424,7 +390,7 @@
             </div>
           </div>
         </div>
-        <div class="home-case-box home-case-out">
+        <div class="home-case-box home-case-out hidden">
           <img src="../../static/images/home_case02.jpg" alt="">
           <div class="home-case-info">
             <div>
@@ -443,16 +409,16 @@
       <div class="home-data-main">
         <ul class="row container">
           <li class="col-4">
-            <h3>2014+</h3>
-            <p>超过2014次服务</p>
+            <h3 class="hidden">2019+</h3>
+            <p class="hidden">超过2019次服务</p>
           </li>
           <li class="col-4">
-            <h3>100%</h3>
-            <p>客户满意率</p>
+            <h3 class="hidden">99%</h3>
+            <p class="hidden">客户满意率</p>
           </li>
           <li class="col-4">
-            <h3>TOP500</h3>
-            <p>世界五百强</p>
+            <h3 class="hidden">TOP5</h3>
+            <p class="hidden">幼儿空间及环创设计</p>
           </li>
         </ul>
       </div>
@@ -461,44 +427,44 @@
     <!-- 合作品牌 -->
     <div class="home-coop">
       <div class="home-title home-title3">
-        <div class="home-title-l"></div>
+        <div class="home-title-l hidden"></div>
         <div class="home-title-c">
-          <h2>合作品牌</h2>
-          <p>COOPERATIVE BRAND</p>
+          <h2 class="hidden">合作品牌</h2>
+          <p class="hidden">COOPERATIVE BRAND</p>
         </div>
-        <div class="home-title-r"></div>
+        <div class="home-title-r hidden"></div>
       </div>
       <div class="home-coop-main">
         <ul class="row">
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo01.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo02.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo03.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo04.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo05.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo06.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo07.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo08.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo09.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo10.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo11.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo12.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo13.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo14.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo15.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo16.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo17.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo18.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo19.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo20.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo21.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo22.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo23.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo24.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo25.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo26.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo27.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo28.jpg" alt=""></li>
-          <li class="col-3 col-sm-2"><img src="../../static/images/coop/home_coop_logo29.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo01.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo02.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo03.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo04.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo05.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo06.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo07.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo08.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo09.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo10.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo11.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo12.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo13.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo14.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo15.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo16.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo17.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo18.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo19.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo20.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo21.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo22.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo23.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo24.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo25.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo26.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo27.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo28.jpg" alt=""></li>
+          <li class="col-3 col-sm-2 hidden"><img src="../../static/images/coop/home_coop_logo29.jpg" alt=""></li>
         </ul>
       </div>
     </div>
@@ -575,22 +541,10 @@
           </div>
           <div class="col-sm-4 public-footer-company">
             <div>
-              <h5>北京童趣环床狮科技有限公司</h5>
+              <h5>北京童趣环创狮科技有限公司</h5>
               <p>Beijing Space Creative Designer technology co. LTD</p>
             </div>
-            <!-- <div>
-              <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
-              <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
-              <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
-            </div>
-            <div class="public-footer-cutline"></div> -->
           </div>
-          <!-- <div class="col-sm-2 public-footer-news">
-            <a href="">新闻中心</a>
-            <a href="">原创观点</a>
-            <a href="">公司新闻</a>
-            <a href="">行业动态</a>
-          </div> -->
         </div>
       </div>
       <div class="public-footer-btm">
@@ -600,6 +554,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="../../static/js/common.js"></script>
 
   <script>
     //返回顶部
@@ -615,6 +571,125 @@
       return false;
     });
 
+    $('#navbar .dropdown').mouseenter(function () {
+      $(this).find('div').stop().slideDown();
+    });
+    $('#navbar .dropdown').mouseleave(function () {
+      $(this).find('div').stop().slideUp();
+    });
+
+    //动画加载
+    function IsPC() {
+      var userAgentInfo = navigator.userAgent;
+      var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+      var flag = true;
+      for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+      }
+      return flag;
+    }
+    if (IsPC()) {
+      $(window).scroll(function () {
+        //可视窗口高度
+        var winH = $(window).height();
+        //鼠标滚动的距离
+        var mouseH = $(window).scrollTop();
+
+        if (winH + mouseH - $('.home-about').offset().top > winH / 2) {
+          $('.home-about .home-title-l,.home-about .home-title-r').addClass('animated fadeIn').removeClass('hidden');
+          $('.home-about .home-title-c h2').addClass('animated fadeInDown').removeClass('hidden');
+          $('.home-about .home-title-c p').addClass('animated fadeInUp').removeClass('hidden');
+          $('.home-about-content-img').addClass('animated fadeInLeft').removeClass('hidden');
+          $('.home-about-content-text>p').each(function () {
+            var that = this;
+            setTimeout(function () {
+              $(that).addClass('animated fadeInRight').removeClass('hidden');
+            }, $(that).index() * 400);
+          })
+          $('.home-about-content-text1>p').each(function () {
+            var that = this;
+            setTimeout(function () {
+              $(that).addClass('animated fadeInRight').removeClass('hidden');
+            }, $(that).index() * 400);
+          })
+          setTimeout(function () {
+            $('.home-about-content-more').addClass('animated fadeInUp').removeClass('hidden');
+          }, 1200)
+        }
+
+        if (winH + mouseH - $('.home-step').offset().top > winH / 2) {
+          $('.home-step ul').addClass('animated swing');
+          setTimeout(function () {
+            $('.home-step li').each(function () {
+              var that = this;
+              if ($(this).index() % 2 === 0) {
+                $(that).addClass('animated bounceInUp').removeClass('hidden');
+              } else {
+                $(that).addClass('animated bounceInDown').removeClass('hidden');
+              }
+            })
+          }, 600)
+        }
+
+        if (winH + mouseH - $('.home-newproduct').offset().top > winH / 2) {
+          $('.home-newproduct .home-title-l,.home-newproduct .home-title-r').addClass('animated fadeIn').removeClass('hidden');
+          $('.home-newproduct .home-title-c h2').addClass('animated fadeInDown').removeClass('hidden');
+          $('.home-newproduct .home-title-c p').addClass('animated fadeInUp').removeClass('hidden');
+        }
+
+        if (winH + mouseH - $('.home-product').offset().top > winH / 2) {
+          $('.home-product .home-title-l,.home-product .home-title-r').addClass('animated fadeIn').removeClass('hidden');
+          $('.home-product .home-title-c h2').addClass('animated fadeInDown').removeClass('hidden');
+          $('.home-product .home-title-c p').addClass('animated fadeInUp').removeClass('hidden');
+          $('.home-product-list li').eq(0).addClass('animated fadeInLeftBig').removeClass('hidden');
+          $('.home-product-list li').eq(1).addClass('animated fadeInDownBig').removeClass('hidden');
+          $('.home-product-list li').eq(2).addClass('animated fadeInRightBig').removeClass('hidden');
+          setTimeout(function () {
+            $('.home-product-list li').eq(3).addClass('animated fadeInLeftBig').removeClass('hidden');
+            $('.home-product-list li').eq(4).addClass('animated fadeInUpBig').removeClass('hidden');
+            $('.home-product-list li').eq(5).addClass('animated fadeInRightBig').removeClass('hidden');
+          }, 600)
+        }
+
+        if (winH + mouseH - $('.home-video').offset().top > winH / 2) {
+          $('.home-video .home-title-l,.home-video .home-title-r').addClass('animated fadeIn').removeClass('hidden');
+          $('.home-video .home-title-c h2').addClass('animated fadeInDown').removeClass('hidden');
+          $('.home-video .home-title-c p').addClass('animated fadeInUp').removeClass('hidden');
+          setTimeout(function(){
+            $('.home-video-info>div>img').addClass('animated flipInY').removeClass('hidden');
+          },1000)
+        }
+
+        if (winH + mouseH - $('.home-case').offset().top > winH / 2) {
+          $('.home-case .home-title-l,.home-case .home-title-r').addClass('animated fadeIn').removeClass('hidden');
+          $('.home-case .home-title-c h2').addClass('animated fadeInDown').removeClass('hidden');
+          $('.home-case .home-title-c p').addClass('animated fadeInUp').removeClass('hidden');
+          $('.home-case-in').addClass('animated fadeInLeftBig').removeClass('hidden');
+          $('.home-case-out').addClass('animated fadeInRightBig').removeClass('hidden');
+        }
+
+        if (winH + mouseH - $('.home-data').offset().top > winH / 2) {
+          $('.home-data-main h3').addClass('animated fadeInDown').removeClass('hidden');
+          $('.home-data-main p').addClass('animated fadeInUp').removeClass('hidden');
+        }
+
+        if (winH + mouseH - $('.home-coop').offset().top > winH / 2) {
+          $('.home-coop .home-title-l,.home-coop .home-title-r').addClass('animated fadeIn').removeClass('hidden');
+          $('.home-coop .home-title-c h2').addClass('animated fadeInDown').removeClass('hidden');
+          $('.home-coop .home-title-c p').addClass('animated fadeInUp').removeClass('hidden');
+          $('.home-coop-main li').each(function () {
+            var that = this;
+            setTimeout(function () {
+              $(that).addClass('animated fadeIn').removeClass('hidden');
+            }, Math.random() * 2000)
+          })
+
+        }
+
+      })
+    }else{
+      $('.hidden').removeClass('hidden');
+    }
     //点击马上体验
     $('.nav-right-advisory').click(function () {
       $('.mask').removeClass('hide');
@@ -643,7 +718,7 @@
       $.ajax({
         type: "post",
         url: "/shuangchuangboost/save_mgx",
-        data: {name: name,phone: phone,content: content},
+        data: { name: name, phone: phone, content: content },
         dataType: 'json',
         beforeSend: function () {
           if (!/^([a-zA-Z]{1,20}|[\u4e00-\u9fa5]{2,10})$/.test(name)) {

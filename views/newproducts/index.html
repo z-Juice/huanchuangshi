@@ -129,45 +129,88 @@
         <div class="products-list-main">
             <div class="container">
                 <div class="products-list-nav">
-                    <ul>
-                        <li class="active">
-                            <a href="../newproducts/index.html">
+                    <ul id="newproducts_nav">
+                        <li class="active" data-url="list1">
+                            <a href="javascript:;">
                                 <h2>新品发布</h2>
                             </a>
                         </li>
                         <li>
-                            <a href="../newproducts/video.html">
+                            <a href="javascript:;" data-url="list2">
                                 <h2>玩转视频</h2>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="products-list-content">
-                    <div class="products-list-title">
-                        <h1>新品发布</h1>
-                    </div>
-                    <div class="newproducts-list-show">
-                        <ul class="clearfix">
-                            <li>
-                                <img src="../../static/images/newproduct/list01.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="../../static/images/newproduct/list02.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="../../static/images/newproduct/list03.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="../../static/images/newproduct/list04.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="../../static/images/newproduct/list05.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="../../static/images/newproduct/list06.jpg" alt="">
-                            </li>
-                        </ul>
-                    </div>
+                    <ul id="newproducts_content">
+                        <li>
+                            <div class="products-list-title">
+                                <h1>新品发布</h1>
+                            </div>
+                            <div class="newproducts-list-show">
+                                <ul class="clearfix">
+                                    <li>
+                                        <img src="../../static/images/newproduct/list01.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="../../static/images/newproduct/list02.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="../../static/images/newproduct/list03.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="../../static/images/newproduct/list04.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="../../static/images/newproduct/list05.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="../../static/images/newproduct/list06.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hide">
+                            <div class="products-list-title">
+                                <h1>玩转视频</h1>
+                            </div>
+                            <div class="newproducts-video-show">
+                                <div class="col-12 col-sm-7 video_wrap">
+                                    <video src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc"
+                                        controls="controls" id="video"></video>
+                                </div>
+                                <div class="col-12 col-sm-5 video_list">
+                                    <ul>
+                                        <li data-src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc">
+                                            <div class="video_list_img">
+                                                <img src="../../static/images/newproduct/videosuolue.jpg" alt="">
+                                                <div><img src="../../static/images/newproduct/videoswitch.png" alt="">
+                                                </div>
+                                            </div>
+                                            <span>环创狮我们矢志于创造具有鲜明个性及高度教育识别理解效果的园所空间,我们是众多强势幼教品牌的合作者,。我们拒绝平庸。我们，为创造而生,为颠覆而行。装修设计一样可以聚集智慧,诞生.....</span>
+                                        </li>
+                                        <li data-src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc">
+                                            <div class="video_list_img">
+                                                <img src="../../static/images/newproduct/videosuolue.jpg" alt="">
+                                                <div><img src="../../static/images/newproduct/videoswitch.png" alt="">
+                                                </div>
+                                            </div>
+                                            <span>环创狮我们矢志于创造具有鲜明个性及高度教育识别理解效果的园所空间,我们是众多强势幼教品牌的合作者,。我们拒绝平庸。我们，为创造而生,为颠覆而行。装修设计一样可以聚集智慧,诞生.....</span>
+                                        </li>
+                                        <li data-src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc">
+                                            <div class="video_list_img">
+                                                <img src="../../static/images/newproduct/videosuolue.jpg" alt="">
+                                                <div><img src="../../static/images/newproduct/videoswitch.png" alt="">
+                                                </div>
+                                            </div>
+                                            <span>环创狮我们矢志于创造具有鲜明个性及高度教育识别理解效果的园所空间,我们是众多强势幼教品牌的合作者,。我们拒绝平庸。我们，为创造而生,为颠覆而行。装修设计一样可以聚集智慧,诞生.....</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -244,22 +287,10 @@
                     </div>
                     <div class="col-sm-4 public-footer-company">
                         <div>
-                            <h5>北京童趣环床狮科技有限公司</h5>
+                            <h5>北京童趣环创狮科技有限公司</h5>
                             <p>Beijing Space Creative Designer technology co. LTD</p>
                         </div>
-                        <!-- <div>
-                  <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
-                  <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
-                  <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
-                </div>
-                <div class="public-footer-cutline"></div> -->
                     </div>
-                    <!-- <div class="col-sm-2 public-footer-news">
-                <a href="">新闻中心</a>
-                <a href="">原创观点</a>
-                <a href="">公司新闻</a>
-                <a href="">行业动态</a>
-              </div> -->
                 </div>
             </div>
             <div class="public-footer-btm">
@@ -272,6 +303,30 @@
     </footer>
 
     <script>
+        //监听锚点变化
+        function hashChangeFire() {
+            var _idx = location.hash.replace(/#/, '') - 1;
+            if (_idx === -1) {
+                _idx = 0;
+            }
+            $('#newproducts_nav>li').eq(_idx).addClass('active').siblings().removeClass('active');
+            $('#newproducts_content>li').eq(_idx).removeClass('hide').siblings().addClass('hide');
+            $("html,body").animate({ scrollTop: $('#carouselExampleIndicators').height() }, 500);
+        }
+        window.onhashchange = hashChangeFire;
+        hashChangeFire();
+
+        //tab切换
+        $('#newproducts_nav>li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('#newproducts_content>li').eq($(this).index()).removeClass('hide').siblings().addClass('hide');
+        });
+
+        // 点击每一个li然后切换视频 
+        $('.video_list li').click(function () {
+            // 获取当前的src的值
+            $('#video').src = $(this).attr('data-src');
+        })
 
     </script>
 </body>
