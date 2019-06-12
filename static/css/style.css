@@ -1618,6 +1618,7 @@ button:focus {
     height: .625rem;
     line-height: .625rem;
     margin-bottom: 0;
+    padding: 0 .02rem;
     color: #4c4948;
     font-size: .1375rem;
     font-weight: normal;
@@ -1732,6 +1733,22 @@ button:focus {
     .products-list-title {
         height: .45rem;
     }
+
+    .products-list-show {
+        padding-top: .24rem;
+    }
+
+    .products-list-show li {
+        width: 48%;
+        margin-left: 2%;
+        margin-top: 0;
+        margin-bottom: .08rem;
+    }
+
+    .products-list-show li h3 {
+        height: .24rem;
+        line-height: .24rem;
+    }
 }
 
 /* 产品详情 */
@@ -1809,6 +1826,38 @@ button:focus {
 
 .products-detail-back:hover {
     color: #fff;
+}
+
+@media (max-width: 992px) {
+    .products-detail-show {
+        padding-top: .24rem;
+    }
+
+    .products-detail-area1 {
+        flex-wrap: wrap;
+        margin-bottom: .2rem;
+    }
+
+    .products-detail-area1-l {
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: .1rem;
+        margin-right: 0;
+    }
+
+    .products-detail-area2 .products-detail-img {
+        display: block;
+        margin-bottom: .08rem;
+    }
+
+    .products-detail-img img {
+        width: 100%;
+        margin-bottom: .06rem;
+    }
+
+    .products-detail-area2 p {
+        margin-bottom: .1rem;
+    }
 }
 
 /* 新品发布 */
@@ -2315,5 +2364,14 @@ button:focus {
     .about-list03-pact ul li {
         padding-left: .02rem;
         padding-right: .02rem;
+    }
+    .about-list-news-l {
+        float: unset;
+        width: 100%;
+        border-bottom: 0;
+    }
+    .about-list-news-r {
+        float: unset;
+        width: 100%;
     }
 }

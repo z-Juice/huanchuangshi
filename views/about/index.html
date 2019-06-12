@@ -138,7 +138,7 @@
               </a>
             </li>
             <li data-url="list3">
-              <a href="javascript:;">
+              <a href="javascript:;" onclick="introbanner()">
                 <h2>战略合作</h2>
               </a>
             </li>
@@ -468,15 +468,14 @@
     });
 
     //关于我们轮播
-    (function introbanner() {
+    function introbanner() {
       var index = 0;
       var list = $('#pactCarousel');
       list.append(list.children('li:nth-child(-n+3)').clone(true));
       var li = list.children();
-      var lilength = li[0].offsetWidth;
 
       function demo(num) {
-        list.stop().animate({ marginLeft: num * -lilength });
+        list.stop().animate({ marginLeft: num * -li.innerWidth() });
       };
 
       var sid = setInterval(play, 3000);
@@ -495,7 +494,7 @@
       }, function () {
         sid = setInterval(play, 3000);
       });
-    })();
+    }
   </script>
 </body>
 
