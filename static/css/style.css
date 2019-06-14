@@ -658,6 +658,31 @@ button:focus {
     z-index: 9999;
 }
 
+.public-tips {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(103, 194, 58, .8);
+    width: fit-content;
+    max-width: 50%;
+    line-height: 1.5;
+    padding: .05rem .5rem;
+    border-radius: .06rem;
+    font-size: .15rem;
+    color: #fff;
+    display: none;
+}
+.public-tips.red {
+    background-color: rgb(245, 108, 108, .8);
+}
+@media (max-width: 992px) {
+    .public-tips {
+        max-width: 80%;
+        padding: .05rem .2rem;
+    }
+}
+
 /* 首页 */
 .home-main {
     border-top: .56rem solid transparent;

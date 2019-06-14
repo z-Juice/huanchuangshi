@@ -512,6 +512,8 @@
 
   <div class="mask hide"></div>
 
+  <div class="public-tips"></div>
+
   <!-- 底部 -->
   <footer class="public-footer">
     <div class="public-footer-arc"></div>
@@ -655,9 +657,9 @@
           $('.home-video .home-title-l,.home-video .home-title-r').addClass('animated fadeIn').removeClass('hidden');
           $('.home-video .home-title-c h2').addClass('animated fadeInDown').removeClass('hidden');
           $('.home-video .home-title-c p').addClass('animated fadeInUp').removeClass('hidden');
-          setTimeout(function(){
+          setTimeout(function () {
             $('.home-video-info>div>img').addClass('animated flipInY').removeClass('hidden');
-          },1000)
+          }, 1000)
         }
 
         if (winH + mouseH - $('.home-case').offset().top > winH / 2) {
@@ -687,7 +689,7 @@
         }
 
       })
-    }else{
+    } else {
       $('.hidden').removeClass('hidden');
     }
     //点击马上体验
@@ -739,11 +741,9 @@
             $("#name").val('');
             $("#phone").val('');
             $("#content").val('');
-            setTimeout(function () {
-              alert(data.message);
-            }, 0);
+            $('.public-tips').text('留言成功！工作人员会在24小时内和您联系，请耐心等待～').show(600).delay(3000).hide(600);
           } else {
-            alert(data.message);
+            $('.public-tips').addClass('red').text(data.message).show(600).delay(3000).hide(600);
           }
         },
         error: function () {
