@@ -9,11 +9,10 @@
     <meta name="keywords" content="环创狮">
     <meta name="description" content="环创狮">
     <link rel="stylesheet" href="../../static/libs/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/animate.min.css" />
     <link rel="stylesheet" href="../../static/css/style.css">
     <script src="../../static/libs/jquery-3.2.1.min.js"></script>
-    <script src="../../static/libs/popper.min.js"></script>
     <script src="../../static/libs/bootstrap4/js/bootstrap.min.js"></script>
-    <script src="../../static/js/common.js"></script>
 </head>
 
 <body>
@@ -32,8 +31,14 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="../home/index.html">首页 <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">关于环创狮</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../about/index.html">关于环创狮</a>
+                        <div>
+                            <a class="dropdown-item" href="../about/index.html#1">关于环创狮</a>
+                            <a class="dropdown-item" href="../about/index.html#2">专家团队</a>
+                            <a class="dropdown-item" href="../about/index.html#3">战略合作</a>
+                            <a class="dropdown-item" href="../about/index.html#4">新闻动态</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="../newproducts/index.html">新品发布</a>
@@ -122,15 +127,15 @@
                 <div class="products-list-nav coop-list-nav">
                     <ul>
                         <li>
-                            <a href="../cooperation/index.html">
-                                <h2>室内</h2>
-                            </a>
-                        </li>
-                        <li class="active">
                             <a href="../cooperation/outdoor.html">
                                 <h2>室外</h2>
                             </a>
                         </li>
+                        <!-- <li class="active">
+                            <a href="../cooperation/index.html">
+                                <h2>室内</h2>
+                            </a>
+                        </li> -->
                         <li>
                             <a href="../cooperation/brand.html">
                                 <h2>合作品牌</h2>
@@ -144,26 +149,26 @@
                     </div>
                     <div class="coop-list-show">
                         <ul class="clearfix">
-                            <li>
-                                <a href="../cooperation/outdoor01.html">
+                            <li class="hidden">
+                                <a href="">
                                     <img src="../../static/images/coop/2/logo01.jpg" alt="">
                                     <h3>奥兹城堡幼儿园</h3>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../cooperation/outdoor02.html">
+                            <li class="hidden">
+                                <a href="">
                                     <img src="../../static/images/coop/2/logo02.jpg" alt="">
                                     <h3>青青藤幼儿园</h3>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../cooperation/outdoor03.html">
+                            <li class="hidden">
+                                <a href="">
                                     <img src="../../static/images/coop/2/logo03.jpg" alt="">
                                     <h3>海亮集团幼儿园</h3>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../cooperation/outdoor04.html">
+                            <li class="hidden">
+                                <a href="">
                                     <img src="../../static/images/coop/2/logo04.jpg" alt="">
                                     <h3>青岛幼儿园</h3>
                                 </a>
@@ -217,6 +222,8 @@
 
     <div class="mask hide"></div>
 
+    <div class="public-tips"></div>
+
     <!-- 底部 -->
     <footer class="public-footer">
         <div class="public-footer-arc"></div>
@@ -246,22 +253,10 @@
                     </div>
                     <div class="col-sm-4 public-footer-company">
                         <div>
-                            <h5>北京童趣环床狮科技有限公司</h5>
+                            <h5>北京童趣环创狮科技有限公司</h5>
                             <p>Beijing Space Creative Designer technology co. LTD</p>
                         </div>
-                        <!-- <div>
-                  <a href=""><img src="../../static/images/footer_wx.png" alt=""></a>
-                  <a href=""><img src="../../static/images/footer_sina.png" alt=""></a>
-                  <a href=""><img src="../../static/images/footer_qzone.png" alt=""></a>
-                </div>
-                <div class="public-footer-cutline"></div> -->
                     </div>
-                    <!-- <div class="col-sm-2 public-footer-news">
-                <a href="">新闻中心</a>
-                <a href="">原创观点</a>
-                <a href="">公司新闻</a>
-                <a href="">行业动态</a>
-              </div> -->
                 </div>
             </div>
             <div class="public-footer-btm">
@@ -272,9 +267,12 @@
             </div>
         </div>
     </footer>
+    
+    <script src="../../static/js/common.js"></script>
 
     <script>
-
+        $('.coop-list-show li:lt(2)').addClass('animated fadeInDown').removeClass('hidden');
+        $('.coop-list-show li:gt(1)').addClass('animated fadeInUp').removeClass('hidden');
     </script>
 </body>
 
