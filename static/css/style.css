@@ -1146,39 +1146,31 @@ button:focus {
 }
 
 .home-newproduct-content ul {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 200%;
   padding: 0;
-  animation-timing-function: ease-in-out;
-  animation: rollAll 16s linear infinite;
-}
-
-@keyframes rollAll {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -100%;
-  }
 }
 
 .home-newproduct-content ul li {
   float: left;
-  width: 12%;
-  padding-right: 2%;
+  width: 2.8rem;
+  padding: 0 .12rem;
 }
 
 .home-newproduct-content ul img {
   width: 100%;
-  box-shadow: 0 0 20px 0 #999;
+  box-shadow: 0 0 .1rem 0 #777;
 }
 
 @media (max-width: 992px) {
   .home-newproduct-content {
     padding: .13rem 0 .16rem;
+  }
+
+  .home-newproduct-content ul li {
+    width: 1rem;
+    padding: 0 .08rem;
+  }
+  .home-newproduct-content ul img {
+    box-shadow: 0 0 .08rem 0 #777;
   }
 }
 
