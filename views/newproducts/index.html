@@ -9,10 +9,12 @@
     <meta name="keywords" content="环创狮">
     <meta name="description" content="环创狮">
     <link rel="stylesheet" href="../../static/libs/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/libs/video/video.min.css" />
     <link rel="stylesheet" href="../../static/css/animate.min.css" />
     <link rel="stylesheet" href="../../static/css/style.css">
     <script src="../../static/libs/jquery-3.2.1.min.js"></script>
     <script src="../../static/libs/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="../../static/libs/video/video.min.js"></script>
 </head>
 
 <body>
@@ -173,12 +175,16 @@
                             </div>
                             <div class="newproducts-video-show">
                                 <div class="col-12 col-sm-7 video_wrap">
-                                    <video src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc"
-                                        controls="controls" id="video"></video>
+                                    <video id="my-video" class="video-js" controls preload="auto" poster="../../static/libs/video/m.jpg" data-setup="{}">
+                                      <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                                      <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                                      <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                                      <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+                                    </video>
                                 </div>
                                 <div class="col-12 col-sm-5 video_list">
                                     <ul>
-                                        <li data-src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc">
+                                        <li data-src="http://vjs.zencdn.net/v/oceans.mp4">
                                             <div class="video_list_img">
                                                 <img src="../../static/images/newproduct/videosuolue.jpg" alt="">
                                                 <div><img src="../../static/images/newproduct/videoswitch.png" alt="">
@@ -186,7 +192,7 @@
                                             </div>
                                             <span>环创狮我们矢志于创造具有鲜明个性及高度教育识别理解效果的园所空间,我们是众多强势幼教品牌的合作者,。我们拒绝平庸。我们，为创造而生,为颠覆而行。装修设计一样可以聚集智慧,诞生.....</span>
                                         </li>
-                                        <li data-src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc">
+                                        <li data-src="http://vjs.zencdn.net/v/oceans.webm">
                                             <div class="video_list_img">
                                                 <img src="../../static/images/newproduct/videosuolue.jpg" alt="">
                                                 <div><img src="../../static/images/newproduct/videoswitch.png" alt="">
@@ -194,7 +200,7 @@
                                             </div>
                                             <span>环创狮我们矢志于创造具有鲜明个性及高度教育识别理解效果的园所空间,我们是众多强势幼教品牌的合作者,。我们拒绝平庸。我们，为创造而生,为颠覆而行。装修设计一样可以聚集智慧,诞生.....</span>
                                         </li>
-                                        <li data-src="blob:https://www.imooc.com/0f6874eb-7e84-4512-a5c6-b9c497e605bc">
+                                        <li data-src="http://vjs.zencdn.net/v/oceans.ogv">
                                             <div class="video_list_img">
                                                 <img src="../../static/images/newproduct/videosuolue.jpg" alt="">
                                                 <div><img src="../../static/images/newproduct/videoswitch.png" alt="">
@@ -324,10 +330,11 @@
 
         // 点击每一个li然后切换视频 
         $('.video_list li').click(function () {
+            var myPlayer = videojs('my-video');
             // 获取当前的src的值
-            $('#video').src = $(this).attr('data-src');
+            myPlayer.src($(this).attr('data-src')); 
+            myPlayer.play();
         })
-
     </script>
 </body>
 
